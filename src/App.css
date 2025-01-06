@@ -1,0 +1,98 @@
+html, body {
+  height: 100%; /* Ensure the html and body take full height */
+  margin: 0; /* Remove default margin */
+  overflow: hidden;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space between elements */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  font-weight: bold; /* Make the label text bold */
+  margin-top: 10px; /* Add some space above the label */
+  margin-bottom: 5px; /* Add some space below the label */
+  display: block; /* Make the label a block element to stack with input */
+  color: #333; /* Change the text color */
+}
+
+.cases-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Allows for multiple columns */
+  gap: 20px; /* Space between grid items */
+  justify-content: center; /* Center the grid items horizontally */
+  max-width: 1000px; /* Set a max width for the grid */
+  width: 100%; /* Ensure the grid takes the full width */
+  align-items: start; /* Align items at the start vertically */
+}
+
+.case-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.case-item h3 {
+  margin: 0 0 10px;
+}
+
+.case-item p {
+  margin: 5px 0;
+}
+
+.nuts-generated {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center; /* Center the text */
+  background-color: #4CAF50; /* Footer background color */
+  color: white; /* Footer text color */
+  width: 100%; /* Full width */
+}
